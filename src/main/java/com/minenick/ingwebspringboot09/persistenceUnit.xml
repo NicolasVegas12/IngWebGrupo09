@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:mysql://localhost:3306/test01</property>
+    <property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+      <property name="connection.username">root</property>
+      <mapping class="com.minenick.ingwebspringboot09.models.AuthGroupEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.AuthGroupPermissionsEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.AuthPermissionEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.AuthUserEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.AuthUserGroupsEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.AuthUserUserPermissionsEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.DjangoAdminLogEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.DjangoContentTypeEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.DjangoMigrationsEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.DjangoSessionEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappCategoriaEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappClienteEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappDetallenotaalmacenEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappDetalleordencompraEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappDetallepedidoventaEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappDocumentocompraEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappDocumentoventaEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappFormapagoEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappNotaalmacenEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappOrdencompraEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappPedidoventaEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappProductoEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappProveedorEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappTipoclienteEntity"/>
+      <mapping class="com.minenick.ingwebspringboot09.models.VentasappTrabajadorEntity"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hibernate.hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
